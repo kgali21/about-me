@@ -24,7 +24,7 @@ runQuiz.onclick = function(){
 
     const whereIWorked = prompt('Did Kam work at McMenamins? True or false?');
     const correctWhereIWorked = true;
-    if(isYes(whereIWorked)===correctWhereIWorked){
+    if(isYes(whereIWorked) === correctWhereIWorked){
         correctAnswers += 1;
     }
 
@@ -58,6 +58,7 @@ runQuiz.onclick = function(){
     response += ' You got a score of 0%, looks like you need to read the page...'
 }
 
+alert('Check your quiz results below!');
 
     result.textContent = response;
 };
