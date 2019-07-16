@@ -1,4 +1,5 @@
 import isYes from './isYes.js'
+import { BADFAMILY } from 'dns';
 
 const runQuiz = document.getElementById('run-quiz');
 const result = document.getElementById('quiz-result');
