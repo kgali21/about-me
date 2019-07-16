@@ -56,12 +56,6 @@ img{
     width: autopx;
 }
 
-.mexico{
-   display: block;
-   margin-left: auto;
-   margin-right: auto; 
-}
-
 button{
     padding: 15px 32px;
     border-radius: 50%;
