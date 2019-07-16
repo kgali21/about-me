@@ -1,7 +1,7 @@
 import isYes from './isYes.js'
 
 const runQuiz = document.getElementById('run-quiz');
-const result = document.getElementById('qui-result');
+const result = document.getElementById('quiz-result');
 
 runQuiz.onclick = function(){
     alert('hello from Kam');
@@ -11,29 +11,52 @@ runQuiz.onclick = function(){
     if(confirmed === false){
     return;
 }
+    let name = '';
 
     const firstName = prompt('What\'s your first name?');
     name = name + firstName;
 
     const lastName = prompt('What\'s your last name?');
-    name = ' ' + lastName;
+    name = name + '  ' + lastName;
 
-    let correctaAnswers = 0;
+    let correctAnswers = 0;
 
     const whereIWorked = prompt('Did Kam work at McMenamins? True or false?');
     const correctWhereIWorked = true;
     if(isYes(whereIWorked)===correctWhereIWorked){
         correctAnswers += 1;
     }
+    
+    const whatWatch = prompt('Does Kam want to buy a Rolex?');
+    const correctWhatWatch = true;
+    if(isYes(whatWatch) === correctWhatWatch){
+        correctAnswers += 1;
+    }
+    
+    const vacayMexico = prompt('Does Kam want to vacation to Mexico?');
+    const correctVacayMexico = true;
+    if(isYes(vacayMexico) === correctVacayMexico){
+        correctAnswers += 1;
+    }
 
     let response = 'Your name is ' + name;
 
-    if(correctAnswers >= 1){
-    response += 'Thats one more point!';
-}
+    if(correctAnswers === 1){
+    response += ' You got a score of 33%, needs work!';
+    }
+
+    else if(correctAnswers === 2){
+        response += ' You got a score of 66%, keepy trying!'
+    }
+
+    else if(correctAnswers === 3){
+        response += ' You got a score of 100%, you really know your stuff!'
+    }
+  
     else{
-    response += 'Try again!'
+    response += ' You got a score of 0%, looks like you need to read the page...'
 }
 
-    result.textContent = resonse;
+
+    result.textContent = response;
 };
