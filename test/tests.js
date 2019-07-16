@@ -1,6 +1,6 @@
 import isYes from '../src/isYes.js';
 
-const test = qunit.test;
+const test = QUnit.test;
 
 test('yes is yes', function(assert){
 

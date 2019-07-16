@@ -15,6 +15,7 @@ runQuiz.onclick = function(){
 
     const firstName = prompt('What\'s your first name?');
     name = name + firstName;
+   
 
     const lastName = prompt('What\'s your last name?');
     name = name + '  ' + lastName;
@@ -26,7 +27,7 @@ runQuiz.onclick = function(){
     if(isYes(whereIWorked)===correctWhereIWorked){
         correctAnswers += 1;
     }
-    
+
     const whatWatch = prompt('Does Kam want to buy a Rolex?');
     const correctWhatWatch = true;
     if(isYes(whatWatch) === correctWhatWatch){
@@ -39,14 +40,14 @@ runQuiz.onclick = function(){
         correctAnswers += 1;
     }
 
-    let response = 'Your name is ' + name;
+    let response = 'Hey there ' + name;
 
     if(correctAnswers === 1){
     response += ' You got a score of 33%, needs work!';
     }
 
     else if(correctAnswers === 2){
-        response += ' You got a score of 66%, keepy trying!'
+        response += ' You got a score of 66%, keep trying!'
     }
 
     else if(correctAnswers === 3){
