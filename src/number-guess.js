@@ -1,4 +1,4 @@
-function compareNumbers(userGuess, correctNumber){
+function compareNumbers(correctNumber, userGuess){
   if(userGuess === correctNumber){
       return 0;
   } else if(userGuess < correctNumber){
