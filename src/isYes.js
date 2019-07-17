@@ -15,9 +15,9 @@ function isYes(text){
     else if(text === 'yeah'){
         return true;
     }
-    else{
+    else {
         return false;
-    }
-}
+    };
+};
 
 export default isYes;

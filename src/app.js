@@ -1,5 +1,5 @@
 import isYes from './isYes.js'
-import { BADFAMILY } from 'dns';
+
 
 const runQuiz = document.getElementById('run-quiz');
 const result = document.getElementById('quiz-result');
@@ -11,7 +11,7 @@ runQuiz.onclick = function(){
     const confirmed = confirm('Are you sure you want to start?');
     if(confirmed === false){
     return;
-}
+    }
     let name = '';
 
     const firstName = prompt('What\'s your first name?');
@@ -55,11 +55,11 @@ runQuiz.onclick = function(){
         response += ' You got a score of 100%, you really know your stuff!'
     }
   
-    else{
+    else {
     response += ' You got a score of 0%, looks like you need to read the page...'
-}
+    };
 
-alert('Check your quiz results below!');
+    alert('Check your quiz results below!');
 
     result.textContent = response;
 };
