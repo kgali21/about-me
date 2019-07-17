@@ -1,3 +1,6 @@
+/* eslint-disable */
+
+// include jsdom for DOM use in test on travis
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 const { window } = new JSDOM(``, {

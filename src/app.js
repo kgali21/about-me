@@ -1,4 +1,4 @@
-import isYes from './isYes.js'
+import isYes from './isYes.js';
 
 
 const runQuiz = document.getElementById('run-quiz');
@@ -10,7 +10,7 @@ runQuiz.onclick = function(){
 
     const confirmed = confirm('Are you sure you want to start?');
     if(confirmed === false){
-    return;
+        return;
     }
     let name = '';
 
@@ -44,20 +44,20 @@ runQuiz.onclick = function(){
     let response = 'Hey there ' + name;
 
     if(correctAnswers === 1){
-    response += ' You got a score of 33%, needs work!';
+        response += ' You got a score of 33%, needs work!';
     }
 
     else if(correctAnswers === 2){
-        response += ' You got a score of 66%, keep trying!'
+        response += ' You got a score of 66%, keep trying!';
     }
 
     else if(correctAnswers === 3){
-        response += ' You got a score of 100%, you really know your stuff!'
+        response += ' You got a score of 100%, you really know your stuff!';
     }
   
     else {
-    response += ' You got a score of 0%, looks like you need to read the page...'
-    };
+        response += ' You got a score of 0%, looks like you need to read the page...';
+    }
 
     alert('Check your quiz results below!');
 
