@@ -1,2 +1,2 @@
-import isYes from '../src/isYes.js';
-import number-guess from '../src/number-guess.js';
+import './src/isYes.js';
+import './src/number-guess.js';

@@ -1,20 +1,14 @@
 import compareNumbers from './number-guess.js'
 
 const generate = document.getElementById('generate');
-const rightAnswer = document.getElementById('right-answer')
+const guessDisplay = document.getElementById('guess-display');
 
-const correctNumber = 4;
+let correctNumber = 4;
 
-generate.addEventListener('click', () =>{
+generate.addEventListener('click', () => {
 
 
-
-    if(correctNumber === 4){
-
-        rightAnswer.classList.remove('hidden');
-
-        generate.disable = true;
-
-    } 
+    guessDisplay.textContent = compareNumbers(userGuess, correctNumber);
 
 });
+
