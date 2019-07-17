@@ -3,7 +3,7 @@ function isYes(text){
     if(text === 'yes'){
         return true;
     }
-     else if(text === 'yep'){
+    else if(text === 'yep'){
         return true;
     }
     else if(text === 'true'){
@@ -17,7 +17,7 @@ function isYes(text){
     }
     else {
         return false;
-    };
-};
+    }
+}
 
 export default isYes;

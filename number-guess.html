@@ -19,11 +19,14 @@
 
 <main>
     <p>Enter a number between and including 1 to 20:</p>
-    <input class="numberEnter" type="text" minlength="1" maxlength="2">
-    <button id="generate">Generate!</button>
-    <span id="guess-display">Your guess is:</span>
+    <input id="number-enter" type="number" min="1" max="20">
     <br/>
-    <span id="tries-display">Your amount of tries left:</span>
+    <button id="generate">Generate!</button>
+    <br/>
+    <button id="reset" onClick="window.location.reload()">Click to Reset Quiz!</button>
+    <span id="guess-display">Start Guessing!</span>
+    <br/>
+    <span id="tries-display">How many tries can you do it in?</span>
 </main>
 <script type="module" src="src/guess.js"></script>
 </body>
