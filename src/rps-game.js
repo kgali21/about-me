@@ -10,6 +10,7 @@ const drawCount = document.getElementById('draw-count');
 const userBetCount = document.getElementById('user-bet');
 const cpuBetCount = document.getElementById('cpu-bet');
 
+
 let wins = 0;
 let losses = 0;
 let draws = 0;
