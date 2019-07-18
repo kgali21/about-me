@@ -1,0 +1,27 @@
+
+
+label {
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.radio-image{
+    border: 5px solid transparent;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+input:checked + .radio-image{
+    border: 5px solid red;
+}
+
+#result img{
+    border: 5px solid transparent;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+}

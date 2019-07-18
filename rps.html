@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/rps.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>Rock Paper Scissors</h1>
+        <a href="./">Home</a>
+        <a href="number-guess.html">Number Guess</a>
+        </nav>
+    </header>
+    <main>
+        <p>
+            We are going to play the basic game of Rock, Paper, Scissors!
+        </br>
+            First choose your weapon!
+        </p>
+        <p>
+            Guide:
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissor beats paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+        </p>
+        <p>
+       <label>
+           <input type="radio" name="spr" value="rock" checked>
+           <img class="radio-image" src="assets/rock.jpg">
+       </label> 
+       <label>
+            <input type="radio" name="spr" value="paper">
+            <img class="radio-image" src="assets/paper.jpg">
+        </label> 
+        <label>
+            <input type="radio" name="spr" value="scissors">
+            <img class="radio-image" src="assets/scissors.jpg">
+        </label> 
+        </p>
+
+        <p>
+            <button id="throw">THROW</button>
+        </p>
+
+        <p id="message">
+            What beats what?
+        </p>
+        <p id="result">
+            <img id="winning-image" class="invisible" src="assets/rock.jpg">
+        </p>
+
+        <p id="record">
+            <span>Wins: <span class="count" id="win-count">0</span></span>
+            <span>Losses: <span class="count" id="loss-count">0</span></span>
+
+        </p>
+
+
+    </main>
+
+</body>
+</html>
