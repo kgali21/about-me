@@ -8,7 +8,6 @@ export default function getThrow(){
 
     return weapon;
 }
-
 export function getThrowFromNumber(randomWeapon){
     if(randomWeapon === 0){
         return 'rock';
@@ -19,5 +18,4 @@ export function getThrowFromNumber(randomWeapon){
     else if(randomWeapon === 2){
         return 'scissors';
     }
-
-}
+} 
