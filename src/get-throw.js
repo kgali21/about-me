@@ -1,15 +1,15 @@
 
 
-function throw() {
+export default function getThrow(){
+    
+    const randomWeapon = Math.floor(Math.random() * 3);
 
-        const randomWeapon = Math.floor(Math.random() * 3);
+    const weapon = getThrowFromNumber(randomWeapon);
 
-        const weapon = getThrowFromNumber(randomWeapon);
-
-        return weapon;
+    return weapon;
 }
 
-function getThrowFromNumber(randomWeapon){
+export function getThrowFromNumber(randomWeapon){
     if(randomWeapon === 0){
         return 'rock';
     }
@@ -19,5 +19,5 @@ function getThrowFromNumber(randomWeapon){
     else if(randomWeapon === 2){
         return 'scissors';
     }
-    
+
 }
