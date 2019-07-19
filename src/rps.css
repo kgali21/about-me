@@ -1,11 +1,13 @@
-
-
 label {
     cursor: pointer;
 }
 
 input {
     display: none;
+}
+
+input:checked + .radio-image{
+    border: 5px solid red;
 }
 
 .radio-image{
@@ -15,8 +17,8 @@ input {
     height: 200px;
 }
 
-input:checked + .radio-image{
-    border: 5px solid red;
+.invisible{
+    visibility: hidden;
 }
 
 #result img{
@@ -24,8 +26,4 @@ input:checked + .radio-image{
     border-radius: 10%;
     width: 300px;
     height: 300px;
-}
-
-.invisible{
-    visibility: hidden;
 }
