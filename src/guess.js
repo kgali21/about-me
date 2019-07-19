@@ -23,21 +23,23 @@ generate.addEventListener('click', () => {
     let tooHighResponse = 'your guess is ' + userGuess + '. You guessed too high, try again...';
     let incorrectResponse = 'Game Over...';
     
-    if(compareNumbers(parseInt(userGuess), correctNumber) === 0){
-        guessDisplay.textContent = correctResponse;
-        generate.disabled = true;
-    } else if(compareNumbers(parseInt(userGuess), correctNumber) === -1){
-        guessDisplay.textContent = tooLowResponse;
-    } else if(compareNumbers(parseInt(userGuess), correctNumber) === 1){
-        guessDisplay.textContent = tooHighResponse;
-    }
+    compareResults(userGuess, correctResponse, tooLowResponse, tooHighResponse);
 
     if(triesRemaining === 0){
         guessDisplay.textContent = incorrectResponse;
         generate.disabled = true;
-    }
-
-  
-    
+    }    
 });
 
+function compareResults(userGuess, correctResponse, tooLowResponse, tooHighResponse) {
+    if(compareNumbers(parseInt(userGuess), correctNumber) === 0) {
+        guessDisplay.textContent = correctResponse;
+        generate.disabled = true;
+    }
+    else if(compareNumbers(parseInt(userGuess), correctNumber) === -1) {
+        guessDisplay.textContent = tooLowResponse;
+    }
+    else if(compareNumbers(parseInt(userGuess), correctNumber) === 1) {
+        guessDisplay.textContent = tooHighResponse;
+    }
+}
