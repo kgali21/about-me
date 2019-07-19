@@ -13,20 +13,20 @@
         <h1>Guess the Number Win a Prize!</h1>
         <nav>
             <a href="./">Home</a>
-            <a href="number-guess.html">Number Guess</a>
             <a href="rps.html">Rock Paper Scissors</a>
         </nav>
     </header>
-
 <main>
     <p>Enter a number between and including 1 to 20:</p>
     <input id="number-enter" type="number" min="1" max="20">
-    <br/>
+    </p>
+    <p>
     <button id="generate">Generate!</button>
-    <br/>
+    </p>
+    <p>
     <button id="reset" onClick="window.location.reload()">Click to Reset Quiz!</button>
     <span id="guess-display">Start Guessing!</span>
-    <br/>
+    </p>
     <span id="tries-display">How many tries can you do it in?</span>
 </main>
 <script type="module" src="src/guess.js"></script>
