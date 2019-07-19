@@ -16,7 +16,7 @@ test('checks to see if it is the same', (assert) => {
 test('checks to see if it is too low', (assert) => {
     const userGuess = 2;
     const correctNumber = 4;
-    const expected = -1;
+    const expected = 1;
 
     const result = compareNumbers(correctNumber, userGuess);
 
@@ -27,7 +27,7 @@ test('checks to see if it is too low', (assert) => {
 test('checks to see if it is too low', (assert) => {
     const userGuess = 7;
     const correctNumber = 4;
-    const expected = 1;
+    const expected = -1;
 
     const result = compareNumbers(correctNumber, userGuess);
 
