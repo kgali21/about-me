@@ -32,27 +32,29 @@
             </ul>
         </p>
         <p>
-        Bet Rules:
-        Your bet is always 10 credits and you start with 100, the first player to gain all of the other player's money wins the big prize!
+            Bet Rules:
+            Your bet is always 10 credits and you start with 100, the first player to gain all of the other player's money wins the big prize!
         </p>
         <p>
             <label>
-                <input type="radio" name="spr" value="rock" checked>
+                <input id ="radio-rock" type="radio" name="spr" value="rock" checked>
                 <img class="radio-image" src="assets/weapons/rock.jpg">
             </label> 
             <label>
-                <input type="radio" name="spr" value="paper">
+                <input id="radio-paper" type="radio" name="spr" value="paper">
                 <img class="radio-image" src="assets/weapons/paper.jpg">
             </label> 
             <label>
-                <input type="radio" name="spr" value="scissors">
+                <input id="radio-scissors" type="radio" name="spr" value="scissors">
                 <img class="radio-image" src="assets/weapons/scissors.jpg">
             </br>
-                Player <span>Bet: <span id="user-bet">100 Credits</span></span>               
+            Player <span>Bet: <span id="user-bet">100 Credits</span></span>               
+            <p>
+                    <input id="bet-credits"  type="number" >
+            </p>    
         </label> 
         </p>
         <p>
-            <input id="number-enter" type="number" min="1" max="20">
             <button id="throw">THROW</button>
             <button id="reset" onClick="window.location.reload()">Reset Game</button>
         </p>

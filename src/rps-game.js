@@ -9,6 +9,7 @@ const lossCount = document.getElementById('loss-count');
 const drawCount = document.getElementById('draw-count');
 const userBetCount = document.getElementById('user-bet');
 const cpuBetCount = document.getElementById('cpu-bet');
+//const userBet = document.getElementById('bet-credits');
 
 let wins = 0;
 let losses = 0;
@@ -24,6 +25,7 @@ cpuBetCount.textCOntent = cpuMsg;
 
 throwButton.addEventListener('click', () => {
     const cpuChoice = getThrow();
+    //let userBet = userBet.value;
    
     winImage.classList.remove('invisible');
     const src = 'assets/weapons/' + cpuChoice + '.jpg';
