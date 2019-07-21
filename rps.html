@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/rps.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>Rock Paper Scissors</h1>
+        <a href="./">Home</a>
+        <a href="number-guess.html">Number Guess</a>
+        </nav>
+    </header>
+    <main>
+        <p>
+            We are going to play the basic game of Rock, Paper, Scissors!
+        </p>
+        <p>
+            First choose your weapon!
+        </p>
+        <p>
+            Guide:
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissor beats paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+        </p>
+        <p>
+            Bet Rules:
+            Your bet is always 10 credits and you start with 100, the first player to gain all of the other player's money wins the big prize!
+        </p>
+        <p>
+            <label>
+                <input id ="radio-rock" type="radio" name="spr" value="rock" checked>
+                <img class="radio-image" src="assets/weapons/rock.jpg">
+            </label> 
+            <label>
+                <input id="radio-paper" type="radio" name="spr" value="paper">
+                <img class="radio-image" src="assets/weapons/paper.jpg">
+            </label> 
+            <label>
+                <input id="radio-scissors" type="radio" name="spr" value="scissors">
+                <img class="radio-image" src="assets/weapons/scissors.jpg">
+            </br>
+            Player <span>Bet: <span id="user-bet">100 Credits</span></span>               
+            <p>
+                    <!-- <input id="bet-credits"  type="number" >-->
+            </p>    
+        </label> 
+        </p>
+        <p>
+            <button id="throw">THROW</button>
+            <button id="reset" onClick="window.location.reload()">Reset Game</button>
+        </p>
+        <p id="message">
+            What beats what?
+        </p>
+        <p id="result">
+            <img id="winning-image" class="invisible" src="assets/weapons/rock.jpg">
+        </br>
+            CPU <span>Bet: <span id="cpu-bet">100 Credits</span></span>
+        </p>
+        <p id="record">
+            <span>Wins: <span class="count" id="win-count">0</span></span>
+            <span>Losses: <span class="count" id="loss-count">0</span></span>
+            <span>Draws: <span class="count" id="draw-count">0</span></span>
+        </p>
+        <script type="module" src="src/rps-game.js"></script>
+    </main>
+</body>
+</html>

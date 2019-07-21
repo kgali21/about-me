@@ -1,0 +1,25 @@
+#number-enter{
+    display: block;
+    margin: auto;
+}
+
+#generate{
+    padding: 15px 32px;
+    border-radius: 50%;
+    background-color:#23754F;
+    border-color: black;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+}
+
+#reset{
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color:#23754F;
+    border-color: black;
+    font-size: 13px;
+    display: block;
+    margin: auto;
+}
+
